@@ -41,6 +41,7 @@ class Autoload extends AutoloadConfig
      */
     public $psr4 = [
         APP_NAMESPACE => APPPATH,
+        'Config'      => APPPATH . 'Config',
     ];
 
     /**
@@ -90,5 +91,8 @@ class Autoload extends AutoloadConfig
      *
      * @var list<string>
      */
-    public $helpers = [];
+    public $helpers = [
+        'database', 'settings', 'login', 'ui', 'countries', 'jwt',
+        'form', 'url', 'upload','greetings', 'permission', 'navigation', 'phone_number', 'send_email', 'brevo'
+    ];
 }
